@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A Casa dos Livros</title>
+    <link rel="stylesheet" href="PJfinal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <h1>A Casa dos Livros</h1>
+
+        <nav>
+            <a href="#livros">Livros</a>
+            <a href="#historia">Nossa História</a>
+            <a href="#carrinho">Carrinho</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="livros">
+
+            <h2 class="categoria">ROMANCE</h2>
+            <hr class="linha">
+
+            <div class="livro">
+                <img src="orgulhooo.jfif">
+                <div class="info">
+                    <h3>Orgulho e Preconceito</h3>
+                    <p>
+                        "Orgulho e Preconceito" é um romance de Jane Austen publicado em 1813, conhecido por explorar as
+                        complexidades das relações sociais e amorosas na Inglaterra do século XIX. A história se foca
+                        nas cinco irmãs Bennet, especialmente na espirituosa Elizabeth Bennet, e seu relacionamento
+                        inicial com o rico e orgulhoso Sr. Darcy. A obra é célebre por criticar os costumes da época,
+                        como a obsessão por casamentos vantajosos e a importância da ascendência social.
+                    </p>
+                    <strong>R$ 21,04</strong><br>
+                    <input type="number" min="1" value="1" id="q1">
+                    <button onclick="adicionar('Orgulho e Preconceito',39.90,'q1')">Comprar</button>
+                </div>
+            </div>
+
+            <div class="livro">
+                <img src="A Culpa é das Estrelas.webp">
+                <div class="info">
+                    <h3>A Culpa é das Estrelas</h3>
+                    <p>
+                        "A Culpa é das Estrelas" narra a história de Hazel Grace Lancaster, uma adolescente com câncer
+                        terminal que participa de um grupo de apoio e se apaixona por Augustus Waters, um jovem
+                        carismático em remissão após perder uma perna para o câncer. O livro acompanha o romance deles,
+                        os desafios da doença e a busca por sentido na vida, explorando temas como amor, esperança e a
+                        finitude da existência
+                    </p>
+                    <strong>R$ 59,90</strong><br>
+                    <input type="number" min="1" value="1" id="q2">
+                    <button onclick="adicionar('A Culpa é das Estrelas',42,'q2')">Comprar</button>
+                </div>
+            </div>
+
+            <h2 class="categoria">TERROR</h2>
+            <hr class="linha">
+
+            <div class="livro">
+                <img src="stephen.webp">
+                <div class="info">
+                    <h3>O Iluminado</h3>
+                    <p>
+                        "O Iluminado" narra a história de Jack Torrance, um escritor alcoólatra em recuperação que
+                        aceita o emprego de zelador no isolado Hotel Overlook durante o inverno. Isolado pela neve com
+                        sua esposa, Wendy, e seu filho Danny, a família descobre que o hotel é assombrado por forças
+                        malignas que tentam controlar Danny, um menino com poderes psíquicos. A entidade do hotel
+                        explora as fraquezas de Jack, levando-o à loucura e ao desejo de matar sua família.
+                    </p>
+                    <strong>R$ 108,00</strong><br>
+                    <input type="number" min="1" value="1" id="q3">
+                    <button onclick="adicionar('O Iluminado',45,'q3')">Comprar</button>
+                </div>
+            </div>
+
+            <div class="livro">
+                <img src="Drácula.webp">
+                <div class="info">
+                    <h3>Drácula</h3>
+                    <p>
+                        A história do Conde Drácula é inspirada em Vlad III, o Empalador, um príncipe romeno conhecido
+                        por sua crueldade e conhecido como "filho do dragão" (Dracul). A figura literária do livro de
+                        1897 de Bram Stoker popularizou o mito do vampiro, incorporando lendas e características que se
+                        tornaram icônicas, como a transformação em morcegos e o medo de alho.
+                    </p>
+                    <strong>R$ 73,00</strong><br>
+                    <input type="number" min="1" value="1" id="q4">
+                    <button onclick="adicionar('Drácula',40,'q4')">Comprar</button>
+                </div>
+            </div>
+
+            <h2 class="categoria">AVENTURA</h2>
+            <hr class="linha">
+
+            <div class="livro">
+                <img src="O Hobbit.webp">
+                <div class="info">
+                    <h3>O Hobbit</h3>
+                    <p>
+                        "O Hobbit" conta a história de Bilbo Bolseiro, um hobbit pacato que é arrastado para uma grande
+                        aventura por um grupo de anões e pelo mago Gandalf, com o objetivo de recuperar um tesouro
+                        roubado pelo dragão Smaug, que se apoderou da Montanha Solitária. A jornada leva Bilbo para além
+                        do seu lar, enfrentando perigos como trolls, orcs e aranhas gigantes, enquanto ele descobre sua
+                        própria coragem e astúcia.
+                    </p>
+                    <strong>R$ 69,90</strong><br>
+                    <input type="number" min="1" value="1" id="q5">
+                    <button onclick="adicionar('O Hobbit',50,'q5')">Comprar</button>
+                </div>
+            </div>
+
+            <div class="livro">
+                <img src="harry.jfif">
+                <div class="info">
+                    <h3>Harry Potter e a Pedra Filosofal </h3>
+                    <p>
+                        "Harry Potter e a Pedra Filosofal" é o primeiro livro da famosa série de fantasia escrita por
+                        J.K. Rowling, que narra a descoberta de Harry sobre sua verdadeira identidade como bruxo e sua
+                        chegada à renomada Escola de Magia e Bruxaria de Hogwarts. Ao longo da história, o leitor
+                        acompanha a transformação de Harry, que foi criado em condições miseráveis e tratado com
+                        desprezo por seus tios, até descobrir que possui uma herança poderosa e um destino grandioso no
+                        mundo mágico. Em Hogwarts, ele conhece novos amigos, como Rony e Hermione, e juntos enfrentam
+                        desafios, mistérios e perigos que surgem dentro e fora da escola.
+
+                        Durante a narrativa, Harry e seus amigos percebem que algo muito valioso está sendo protegido em
+                        Hogwarts e que uma força obscura tenta se apoderar desse objeto. Unidos pela coragem e amizade,
+                        eles fazem de tudo para impedir que a Pedra Filosofal, um artefato lendário capaz de produzir o
+                        Elixir da Longa Vida e de transformar qualquer metal em ouro, caia nas mãos erradas,
+                        especialmente nas de Lord Voldemort, o bruxo das trevas responsável por grandes tragédias no
+                        passado de Harry. Assim, a obra combina magia, aventura, mistério e amizade, envolvendo o leitor
+                        do começo ao fim.
+                    </p>
+                    <strong>R$ 60,00</strong><br>
+                    <input type="number" min="1" value="1" id="q6">
+                    <button onclick="adicionar('Harry Potter e a Pedra Filosofal ',46,'q6')">Comprar</button>
+                </div>
+            </div>
+
+            <h2 class="categoria">SUSPENSE</h2>
+            <hr class="linha">
+
+            <div class="livro">
+                <img src="O Paciente.jfif">
+                <div class="info">
+                    <h3>O Paciente </h3>
+                    <p>
+                        "O Paciente", de Jasper DeWitt, conta a história de um jovem e ambicioso psiquiatra, Parker H.,
+                        que decide trabalhar em um antigo e isolado hospital psiquiátrico localizado em New England. Lá,
+                        ele se depara com Joe, o paciente mais antigo, enigmático e perigoso da instituição, internado
+                        desde a infância por razões que ninguém consegue explicar completamente. Joe vive em uma ala
+                        restrita, onde pouquíssimas pessoas têm autorização para entrar, e sua presença é cercada de
+                        medo e mistério.
+
+                        A narrativa é apresentada por meio de posts publicados no blog de Parker, nos quais ele relata
+                        suas experiências, pensamentos e descobertas durante o tratamento do paciente. Conforme o médico
+                        se envolve cada vez mais com o caso, ele começa a perceber que há algo inexplicável e
+                        perturbador relacionado a Joe, algo que vai além de qualquer diagnóstico psiquiátrico conhecido.
+                        Movido pela curiosidade e pela vontade de entender a verdade, Parker se aprofunda na história do
+                        paciente e nos segredos obscuros do hospital, colocando em risco não apenas sua carreira, mas
+                        também sua própria sanidade. A obra mistura suspense psicológico, mistério e terror, prendendo o
+                        leitor a cada novo relato.
+                    </p>
+                    <strong>R$ 80,00</strong><br>
+                    <input type="number" min="1" value="1" id="q7">
+                    <button onclick="adicionar('O Paciente',39,'q7')">Comprar</button>
+                </div>
+            </div>
+
+            <div class="livro">
+                <img src="A Garota do Lago.webp">
+                <div class="info">
+                    <h3>A Garota do Lago</h3>
+                    <p>
+                        "A Garota do Lago" é um thriller sobre a repórter Kelsey Castle que investiga o assassinato
+                        brutal da estudante Becca Eckersley na pequena cidade de Summit Lake. A história alterna entre a
+                        investigação de Kelsey no presente e a vida de Becca no passado, revelando segredos e
+                        desconstruindo a imagem da vítima. A narrativa se aprofunda em temas como feminicídio, a
+                        dificuldade de aceitar um "não" e a obstrução da justiça, além de explorar a conexão pessoal de
+                        Kelsey com o crime, que a ajuda a superar seu próprio passado.
+                    </p>
+                    <strong>R$ 33,50</strong><br>
+                    <input type="number" min="1" value="1" id="q8">
+                    <button onclick="adicionar('A Garota do Lago',44,'q8')">Comprar</button>
+                </div>
+            </div>
+
+            <h2 class="categoria">FANTASIA</h2>
+            <hr class="linha">
+
+            <div class="livro">
+                <img src="O Senhor dos Anéis.jfif">
+                <div class="info">
+                    <h3>O Senhor dos Anéis</h3>
+                    <p>
+                        "O Senhor dos Anéis" fala sobre a jornada épica do hobbit Frodo Bolseiro para destruir o "Um Anel" do Senhor das Trevas, Sauron, antes que ele possa dominar toda a Terra-média. A história acompanha a Sociedade do Anel, formada por diversas raças como hobbits, elfos, anões e homens, enquanto eles lutam contra as forças do mal em busca da destruição do anel na Montanha da Perdição, o único lugar onde pode ser desfeito. Além da aventura, a obra explora temas como amizade, coragem diante do medo, perseverança e a luta entre o bem e o mal em um mundo rico e detalhado.  
+                    </p>
+                    <strong>R$ 70,00</strong><br>
+                    <input type="number" min="1" value="1" id="q9">
+                    <button onclick="adicionar('O Senhor dos Anéis',55,'q9')">Comprar</button>
+                </div>
+            </div>
+
+            <div class="livro">
+                <img src="Corte de Espinhos e Rosas.webp">
+                <div class="info">
+                    <h3>Corte de Espinhos e Rosas</h3>
+                    <p>
+                       O livro "Corte de Espinhos e Rosas" narra a história de Feyre, uma jovem caçadora que, após matar um lobo, é levada para a terra feérica como reparação e se torna prisioneira de Tamlin, o Grão-Senhor da Corte Primaveril. Ao longo de sua estadia forçada, Feyre desenvolve sentimentos de hostilidade para uma paixão avassaladora por Tamlin, enquanto descobre uma antiga sombra que ameaça o reino feérico e o dos mortais. O livro explora temas como amor, ódio, prejudice entre humanos e feéricos, e a jornada de amadurecimento da protagonista.
+                    </p>
+                    <strong>R$ 110,00</strong><br>
+                    <input type="number" min="1" value="1" id="q10">
+                    <button onclick="adicionar('Corte de Espinhos e Rosas',60,'q10')">Comprar</button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="historia">
+
+            <h2 class="categoria">Nossa História</h2>
+            <hr class="linha">
+
+            <div class="historia">
+
+                <div class="fotos">
+                    <img src="livraria 00.webp">
+                </div>
+
+                <div class="texto-historia">
+                    <p>
+                        A Casa dos Livros nasceu do amor pelas histórias, pelas palavras e pelo poder transformador da
+                        leitura. Mais do que uma simples livraria, ela foi pensada como um refúgio para leitores de
+                        todas as idades, um lugar onde cada pessoa possa encontrar um mundo novo a cada página virada.
+                        Em um tempo marcado pela correria e pelo excesso de telas, A Casa dos Livros surge como um
+                        espaço de pausa, de imaginação e de conhecimento.
+
+                        Nossa missão é resgatar o encanto dos livros físicos e mostrar que eles continuam sendo
+                        essenciais para o desenvolvimento pessoal, cultural e emocional das pessoas. Acreditamos que os
+                        livros têm a capacidade de inspirar, ensinar, consolar e provocar reflexões profundas. Por isso,
+                        cada exemplar disponível em nossas prateleiras é escolhido com cuidado, pensando na diversidade
+                        de gostos, interesses e necessidades dos nossos leitores.
+
+                        Em A Casa dos Livros, você encontra desde clássicos da literatura mundial até lançamentos
+                        recentes, passando por obras infantojuvenis, romances, poesias, livros didáticos, biografias,
+                        ficção científica, fantasia, suspense, livros de autoajuda, filosofia, história, ciência e muito
+                        mais. Nosso objetivo é que qualquer pessoa que entre em nossa livraria — seja presencial ou
+                        virtualmente — se sinta acolhida e representada.
+
+                        Mais do que vender livros, queremos criar experiências. Cada canto de A Casa dos Livros foi
+                        pensado para estimular a curiosidade e o desejo de explorar novos títulos. As capas, as cores,
+                        os cheiros e a organização do espaço contribuem para uma atmosfera aconchegante, que convida o
+                        visitante a permanecer por mais tempo, folhear páginas, descobrir novos autores e se reconectar
+                        com o hábito da leitura.
+
+                        Além disso, valorizamos muito a proximidade com nossos clientes. Acreditamos que uma livraria
+                        não é feita só de paredes e estantes, mas, principalmente, de pessoas. Por isso, mantemos um
+                        atendimento humanizado, com indicações personalizadas e apoio para quem está começando a criar o
+                        hábito de ler. Queremos fazer parte da história de cada leitor que escolhe A Casa dos Livros.
+
+                        Também acreditamos na importância da educação e do acesso à cultura. Por isso, buscamos sempre
+                        oferecer preços justos, promoções especiais e projetos que incentivem a leitura em escolas e
+                        comunidades. Sonhamos em ser reconhecidos não apenas como uma livraria, mas como um ponto de
+                        encontro para quem ama aprender, imaginar e sonhar.
+
+                        A Casa dos Livros é um lugar onde as histórias ganham vida, onde os sonhos encontram palavras e
+                        onde cada leitor encontra um pedacinho de si em meio às páginas. Aqui, cada livro é uma porta
+                        aberta para um novo mundo, e cada cliente se torna parte da nossa própria história.
+
+                        Seja bem-vindo à A Casa dos Livros — o lugar onde a leitura
+                    </p>
+                </div>
+
+            </div>
+            <section id="carrinho">
+                <h2 class="categoria">Resumo da compra</h2>
+                <hr class="linha">
+
+                <table id="tabela-carrinho">
+                    <tr>
+                        <th>Livro</th>
+                        <th>Quantidade</th>
+                        <th>Valor unitário</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </table>
+
+                <h3 id="total">Total: R$ 0,00</h3>
+
+                <button id="finalizar" onclick="finalizarPedido()">
+                    Finalizar pedido
+                </button>
+            </section>
+
+    </main>
+
+
+    <script src="PJfinal.js"></script>
+</body>
+
+</html>
